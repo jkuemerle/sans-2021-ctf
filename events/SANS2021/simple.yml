@@ -1,0 +1,33 @@
+- name: Simple Question 1
+  description: >-
+    This is a basic challenge. The flag is `foo`
+  max_attempts: 0
+  value: 15
+  category: Simple
+  type: standard
+  state: visible
+  flags:
+    - type: static
+      content: foo
+      data: null
+  hints:
+    - type: standard
+      content: >-
+        See the challenge text. 
+      cost: 45
+- name: Simple Question 2
+  description: This is another basic challenge. The flag is `bar`
+  max_attempts: 0
+  value: 15
+  category: Simple
+  type: standard
+  state: visible
+  flags:
+    - type: static
+      content: bar
+      data: null
+  hints:
+    - type: standard
+      content: >-
+        See the challenge text. 
+      cost: 45

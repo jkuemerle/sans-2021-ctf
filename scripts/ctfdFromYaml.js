@@ -122,7 +122,7 @@ var ct = JSON.stringify(challenges);
 var ft = JSON.stringify(flags);
 var ht = JSON.stringify(hints);
 var it = JSON.stringify(integrated);
-var ft = JSON.stringify(challengeFiles);
+var filet = JSON.stringify(challengeFiles);
 var challengeOutFile = path.join(dbOutFolder, "challenges.json");
 var flagsOutFile = path.join(dbOutFolder, "flags.json");
 var hintsOutFile = path.join(dbOutFolder, "hints.json");
@@ -132,7 +132,7 @@ fs.writeFileSync(challengeOutFile, ct);
 fs.writeFileSync(flagsOutFile, ft);
 fs.writeFileSync(hintsOutFile, ht);
 fs.writeFileSync(integratedOutFile, it);
-fs.writeFileSync(filesOutFile, ft);
+fs.writeFileSync(filesOutFile, filet);
 
 if (pagesFolder) {
     var pagesFile = path.join(dbOutFolder, "pages.json");

@@ -20,7 +20,7 @@ const getAllYamlFiles = function(dirPath, arrayOfFiles) {
                 arrayOfFiles = getAllYamlFiles(dirPath + "/" + file, arrayOfFiles)
             }
         } else {
-            if (path.extname(path.join(dirPath, file)).toLowerCase() == '.yml') {
+            if (path.extname(path.join(dirPath, file)).toLowerCase() == '.yml' || path.extname(path.join(dirPath, file)).toLowerCase() == '.yaml') {
                 arrayOfFiles.push(path.join(__dirname, dirPath, "/", file))
             }
         }
@@ -116,6 +116,7 @@ for (var i = 0; i < inputFiles.length; i++) {
             challenge_id++;
         }
     }
+    console.log(`Finished ${inputFiles[i]}`)
 }
 
 var ct = JSON.stringify(challenges);
